@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-%0#$m=*eky-1=7e#wu*sx37*z_l1&%smpi!14(g3i9h=znm3+#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['172.29.205.25', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -82,13 +82,14 @@ WSGI_APPLICATION = 'testing.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'testing',
-        'USER': 'myuser',
-        'PASSWORD': 'amu',
-        'HOST': 'localhost',
+        'NAME': 'sample-db',                      # Replace with your actual database name
+        'USER': 'adminuser@sample-db-server',     # Use full username format required by Azure
+        'PASSWORD': 'Nandhusk@1322',         # Replace with your actual password
+        'HOST': 'sample-db-server.postgres.database.azure.com',
         'PORT': '5432',
     }
 }
+
 
 
 
