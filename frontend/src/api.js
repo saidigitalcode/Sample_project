@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://192.168.0.160:8000/api/',
+  baseURL: 'http://sample-django-backend.azurewebsites.net/api/',
 });
 
 export default api;
