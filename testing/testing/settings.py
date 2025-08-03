@@ -100,7 +100,7 @@ CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOWED_ORIGINS = [
     "https://nice-mud-0c786a51e.2.azurestaticapps.net",
 ]
-
+CORS_ALLOW_CREDENTIALS = True
 
 # Default PK field
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
