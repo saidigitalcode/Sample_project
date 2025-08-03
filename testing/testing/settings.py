@@ -96,7 +96,11 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # CORS
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = False
+CORS_ALLOWED_ORIGINS = [
+    "https://nice-mud-0c786a51e.2.azurestaticapps.net",
+]
+
 
 # Default PK field
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
